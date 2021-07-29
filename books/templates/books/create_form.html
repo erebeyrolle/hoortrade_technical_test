@@ -1,0 +1,33 @@
+{% extends 'books/base.html' %}
+
+{% block title %}Ajout / Modification d'un livre{% endblock title %}
+
+{% block header %}
+  <h1 class="text-center">AJOUTER UN LIVRE DANS LA BIBLIOTHEQUE</h1>
+    <div class="top2">
+        <button class="btn-perso"><a href="../../" class="lnk-perso">Retour Accueil</a></button>
+    </div> 
+{% endblock header %}
+
+{% block content %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form class="form" role="form" method = 'POST' enctype="multipart/form-data" action="">
+                        {% csrf_token %}
+                            <table class = 'w-50 table table-light' >
+                                {% for field in create_form %}
+                                <tr>
+                                    <th>{{field.label }}</th>
+                                    <td>{{ field }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                            <button type="submit" class="btn-form">Valider</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

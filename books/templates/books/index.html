@@ -1,0 +1,29 @@
+{% extends 'books/base.html' %}
+  
+{% block title %}Accueil bibliothèque{% endblock title %}
+
+{% block header %}
+  <h1 class="text-center">LES LIVRES DANS LA BIBLIOTHEQUE</h1>
+    <div class="top2">
+      <button class="btn-perso"><a href="create" class="lnk-perso">Ajouter un livre</a></button>
+    </div>
+{% endblock header %}
+
+{% block content %}
+  <section>
+    <div class="container">
+      <div class="row">
+        {% for book in books %}
+          <div class="card mx-2 my-2" style="width: 18rem;">
+            <img class="card-img-top index" src="{{ book.cover.url }}" alt="Book cover image">
+            <div class="card-body">
+              <h5 class="card-title">{{ book.title }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>         
+              <a href="details/{{ book.id }}" class="btn btn-success btn-block" >Voir détails</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

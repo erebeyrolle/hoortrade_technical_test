@@ -1,0 +1,5 @@
+Deux écritures pour les path dans Django, avec le même résultat
+
+"{% url "details" book.id %}"
+
+"details/{{ book.id }}"

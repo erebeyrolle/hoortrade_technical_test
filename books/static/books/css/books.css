@@ -1,0 +1,117 @@
+header{
+    position: sticky;
+    top: 0;
+}
+
+section{
+    background-image: url('/media/Biblio.jpg');
+    background-size: cover;
+}
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    font-family: Cantarell, Lucida, sans-serif;
+    background: black;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.index img {
+    width: 150px; height: 250px;
+    border: 1px solid;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.top1{
+    background-image: url('/media/mehmet-turgut-kirkgoz-69mOij_kOdc-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top1 h1 {
+    font-family: "Reenie Beanie", Oldtown, fantasy;
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-shadow: 0px 1px 1px black, 5px 5px 10px black;
+    color: white;
+}
+
+.top2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.top2 * {
+    font-family: Cantarell, Lucida, sans-serif;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+
+.btn-perso{
+    background-color:  #5D8FAE05;
+    border-radius: 0.75rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    text-align: center;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn-perso:hover{
+    background-color:  #5D8FAE;
+}
+
+.btn-perso:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.lnk-perso{
+    text-shadow: 0px 1px 1px black, 5px 5px 10px black;
+    color: black;
+    
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+.detail{
+    background-color: white;
+}
+
+.form{
+    
+}
+
+.btn-form{
+    background-color:  #5D8FAE05;
+    border-radius: 0.75rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    color: white;
+    text-align: center;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn-form:hover{
+    background-color:  #5D8FAE;
+}
+
+.btn-form:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
